@@ -33,8 +33,8 @@ public class StudentService {
         repo.deleteById(id);
     }
 
-    // Alumnos inscritos en un curso
+
     public List<Student> findByCoursesId(Long courseId) {
-        return repo.findByCoursesId(courseId);
+        return repo.findBySeatsCourseId(courseId);
     }
 }

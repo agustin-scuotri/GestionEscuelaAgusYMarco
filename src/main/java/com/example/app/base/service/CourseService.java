@@ -33,7 +33,7 @@ public class CourseService {
         repo.deleteById(id);
     }
 
-    // Traer cursos de un profesor
+
     public List<Course> findByProfessorId(Long professorId) {
         return repo.findByProfessorId(professorId);
     }

@@ -33,8 +33,8 @@ public class PersonService {
         repo.deleteById(id);
     }
 
-    // Búsqueda por apellido
-    public List<Person> findByLastName(String lastName) {
-        return repo.findByLastName(lastName);
+
+    public List<Person> findByLastName(String name) {
+        return repo.findByName(name);
     }
 }

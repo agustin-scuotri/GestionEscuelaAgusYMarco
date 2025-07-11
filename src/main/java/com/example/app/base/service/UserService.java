@@ -33,7 +33,7 @@ public class UserService {
         repo.deleteById(id);
     }
 
-    // Para tu login/autenticación
+
     public Optional<User> findByUsername(String username) {
         return repo.findByUsername(username);
     }

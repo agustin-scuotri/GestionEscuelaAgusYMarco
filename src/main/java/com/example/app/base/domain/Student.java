@@ -2,7 +2,8 @@ package com.example.app.base.domain;
 
 import java.util.*;
 import jakarta.persistence.*;
-
+@Entity
+@Table(name = "students")
 public class Student extends Person {
 	
 	@Column(name = "student_number", unique = true, nullable = false, updatable = false)

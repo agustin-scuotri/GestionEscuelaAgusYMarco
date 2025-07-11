@@ -33,7 +33,6 @@ public class SeatService {
         repo.deleteById(id);
     }
 
-    // Asientos de un curso
     public List<Seat> findByCourseId(Long courseId) {
         return repo.findByCourseId(courseId);
     }
